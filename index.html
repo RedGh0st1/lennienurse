@@ -24,28 +24,45 @@
         color: hsl(228, 45%, 44%);
       }
       * {
-        padding: 0;
         margin: 0;
         box-sizing: border-box;
-        border: 1px solid red;
+        position: relative;
       }
       body {
-        margin: 0;
-        padding: 0;
-        border: 10px solid blue;
         background-color: hsl(0, 0%, 100%);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div {
+        max-width: 235px;
       }
     </style>
   </head>
   <body>
-    <div class="container--box">
-      <div class="img--box">
-        <img src="images/image-qr-code.png" alt="QR" />
+    <div
+      style="
+        border: 1px solid green;
+        border-radius: 10px;
+        background-color: white;
+      "
+    >
+      <div style="margin: 15px">
+        <img
+          src="images/image-qr-code.png"
+          alt="QR"
+          style="width: 250px; height: auto; border-radius: 5px"
+        />
       </div>
 
-      <div class="content--box">
-        Improve your front-end skills by building projects Scan the QR code to
-        visit Frontend Mentor and take your coding skills to the next level
+      <div style="text-align: center; margin: 1px; padding: 10px">
+        <h3 style="text-align: center">
+          Improve your front-end skills by building projects
+        </h3>
+        <br />
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
       </div>
 
       <div class="attribution">
